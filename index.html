@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="This website is part of a freecodecamp responsive design certification. It represents a tribute to Laurent Garnier">
+  <meta name="description" content="This website is part of a freecodecamp responsive design certification. The survey form will help you to find the best European Iron man for you">
 
   <!-- favicon -->
   <link rel="icon" type="image/png" href="#">
-  <title>Survey</title>
+  <title>European Iron Man survey</title>
 
   <!-- Normalize.CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" type="text/css">
@@ -29,10 +29,12 @@
   <header>
     <div class="container">
       <h1 id="title">
-        Survey Form title
+        Ironman survey
       </h1>
       <p id="description">
-        Describe the survey
+        An Ironman Triathlon is one of a series of long-distance triathlon races organized by the World Triathlon Corporation (WTC), consisting of a 2.4-mile (3.86 km) swim, a 112-mile (180.25 km) bicycle ride and a marathon 26.22-mile (42.20 km)
+        run, raced in that order and without a break. It is widely considered one of the most difficult one-day sporting events in the world <a href="https://en.wikipedia.org/wiki/Ironman_Triathlon" target="_blank">Learn more about Iron man.</a> <br />Are
+        you planning an Ironman in Europe, find out which one is best suited for you.
       </p>
     </div>
   </header>
@@ -42,42 +44,109 @@
 
       <form id="survey-form" action="">
 
-        <h1>Register:</h1>
-
-        <!-- One "tab" for each step in the form: -->
-        <div class="tab">
-          <label id="name-label" for="name">Name</label>
-          <input type="text" placeholder="John Doe" id="name" name="name" oninput="this.className = ''" required>
-        </div>
-
-        <div class="tab">Contact Info:
-          <label id="email-label" for="email">Email</label>
-          <input type="email" placeholder="johndoe@freecodecamp.com" id="email" name="email" oninput="this.className = ''" required>
-          <label id="number-label" for="number">Phone number</label>
-          <input type="number" min="0" max="10" placeholder="+415 635 8999" id="number" name="number" value="0" oninput="this.className = ''" required>
-        </div>
-
-        <div class="tab">dropdown:
-          <label id="dropdown-label" for="dropdown">dropdown</label>
-          <select id="dropdown" class="" name="">
-            <option value="0">first option</option>
-            <option value="1">second option</option>
+        <div>
+          <label id="dropdown-label" for="dropdown">What type of course are you looking for ?</label>
+          <select id="dropdown" class="course" name="course">
+            <option value="0">Flat</option>
+            <option value="1">Hilly</option>
+            <option value="2">Scenic</option>
+            <option value="3">Cityscape</option>
+            <option value="4">Historic</option>
+            <option value="5">Exotic</option>
           </select>
         </div>
 
-        <div style="overflow:auto;">
-          <div style="float:right;">
-            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        <fieldset>
+          <legend>What part of Europe would you like to explore ?</legend>
+
+          <div>
+            <input type="radio" id="" name="1radio" value="north" />
+            <label for="">North</label>
           </div>
+
+          <div>
+            <input type="radio" id="" name="1radio" value="east" />
+            <label for="">East</label>
+          </div>
+
+          <div>
+            <input type="radio" id="" name="1radio" value="central" />
+            <label for="">Central</label>
+          </div>
+
+          <div>
+            <input type="radio" id="" name="1radio" value="south" />
+            <label for="">South</label>
+          </div>
+
+          <div>
+            <input type="radio" id="" name="1radio" value="west" />
+            <label for="">West</label>
+          </div>
+
+        </fieldset>
+
+        <div>
+          <label id="name-label" for="name">Name</label>
+          <input type="text" placeholder="John Doe" id="name" name="name" required>
         </div>
 
-        <!-- Circles which indicates the steps of the form: -->
-        <div style="text-align:center;margin-top:40px;">
-          <span class="step"></span>
-          <span class="step"></span>
-          <span class="step"></span>
+        <div>
+          <label id="email-label" for="email">Email</label>
+          <input type="email" placeholder="johndoe@freecodecamp.com" id="email" name="email" required>
         </div>
+
+        <div>
+          <label id="number-label" for="number">Phone number</label>
+          <input type="number" min="0" max="10" placeholder="+415 635 8999" id="number" name="number" value="0" required>
+        </div>
+
+        <fieldset>
+          <legend>legend</legend>
+
+          <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked />
+            <label for="huey">Huey</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey" />
+            <label for="dewey">Dewey</label>
+          </div>
+
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie" />
+            <label for="louie">Louie</label>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Select a maintenance drone</legend>
+
+          <div>
+            <input type="checkbox" id="" name="" value="0" checked />
+            <label for="">checkbox 1</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="" name="" value="1" />
+            <label for="">checkbox 2</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="" name="" value="2" />
+            <label for="">checkbox 3</label>
+          </div>
+
+        </fieldset>
+
+        <div>
+          <label for="advanced">Advanced example:</label>
+          <textarea id="advanced" name="advanced" rows="3" cols="33" maxlength="200"></textarea>
+        </div>
+
+        <input type="submit" placeholder="" id="submit" name="submit" value="submit" />
 
       </form>
 
@@ -98,80 +167,6 @@
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
   </script>
 
-  <script>
-    var currentTab = 0; // Current tab is set to be the first tab (0)
-    showTab(currentTab); // Display the current tab
-
-    function showTab(n) {
-      // This function will display the specified tab of the form ...
-      var x = document.getElementsByClassName("tab");
-      x[n].style.display = "block";
-      // ... and fix the Previous/Next buttons:
-      if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none";
-      } else {
-        document.getElementById("prevBtn").style.display = "inline";
-      }
-      if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
-      } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
-      }
-      // ... and run a function that displays the correct step indicator:
-      fixStepIndicator(n)
-    }
-
-    function nextPrev(n) {
-      // This function will figure out which tab to display
-      var x = document.getElementsByClassName("tab");
-      // Exit the function if any field in the current tab is invalid:
-      if (n == 1 && !validateForm()) return false;
-      // Hide the current tab:
-      x[currentTab].style.display = "none";
-      // Increase or decrease the current tab by 1:
-      currentTab = currentTab + n;
-      // if you have reached the end of the form... :
-      if (currentTab >= x.length) {
-        //...the form gets submitted:
-        document.getElementById("survey-form").submit();
-        return false;
-      }
-      // Otherwise, display the correct tab:
-      showTab(currentTab);
-    }
-
-    function validateForm() {
-      // This function deals with validation of the form fields
-      var x, y, i, valid = true;
-      x = document.getElementsByClassName("tab");
-      y = x[currentTab].getElementsByTagName("input");
-      // A loop that checks every input field in the current tab:
-      for (i = 0; i < y.length; i++) {
-        // If a field is empty...
-        if (y[i].value == "") {
-          // add an "invalid" class to the field:
-          y[i].className += " invalid";
-          // and set the current valid status to false:
-          valid = false;
-        }
-      }
-      // If the valid status is true, mark the step as finished and valid:
-      if (valid) {
-        document.getElementsByClassName("step")[currentTab].className += " finish";
-      }
-      return valid; // return the valid status
-    }
-
-    function fixStepIndicator(n) {
-      // This function removes the "active" class of all steps...
-      var i, x = document.getElementsByClassName("step");
-      for (i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" active", "");
-      }
-      //... and adds the "active" class to the current step:
-      x[n].className += " active";
-    }
-  </script>
 
 
 </body>
