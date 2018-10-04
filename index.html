@@ -8,7 +8,7 @@
 
   <!-- favicon -->
   <link rel="icon" type="image/png" href="#">
-  <title>European Iron Man survey</title>
+  <title>European Ironman</title>
 
   <!-- Normalize.CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" type="text/css">
@@ -29,12 +29,12 @@
   <header>
     <div class="container">
       <h1 id="title">
-        Ironman survey
+        Ironman
       </h1>
       <p id="description">
         An Ironman Triathlon is one of a series of long-distance triathlon races organized by the World Triathlon Corporation (WTC), consisting of a 2.4-mile (3.86 km) swim, a 112-mile (180.25 km) bicycle ride and a marathon 26.22-mile (42.20 km)
         run, raced in that order and without a break. It is widely considered one of the most difficult one-day sporting events in the world <a href="https://en.wikipedia.org/wiki/Ironman_Triathlon" target="_blank">Learn more about Iron man.</a> <br />Are
-        you planning an Ironman in Europe, find out which one is best suited for you.
+        you planning an Ironman in Europe, Here are some of them.
       </p>
     </div>
   </header>
@@ -42,52 +42,51 @@
   <main id="main" role="main">
     <div class="container">
 
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Barcelona, SPAIN</h5>
+            <p class="card-text">IRONMAN Barcelona showcases a historic and culturally rich region of Spain. <a href="http://eu.ironman.com/triathlon/events/emea/ironman/barcelona.aspx#axzz5SvojhsH4">Read more</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Next one happening on Oct 7th 2018</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Lanzarote, canary islands, SPAIN</h5>
+            <p class="card-text">IRONMAN Lanzarote is one of the longest-standing races in Europe. A Unesco biosphere reserve, Lanzarote is a captivating island with 300 volcanic cones.<a href="http://eu.ironman.com/triathlon/events/emea/ironman/lanzarote.aspx#axzz5SvojhsH4">Read
+                more</a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Next one happening on May 25th 2019</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Cork, Ireland</h5>
+            <p class="card-text">IRONMAN Ireland, Cork, will showcase the beauty and rugged landscapes of County Cork - one of Ireland's most popular tourist destinations.<a href="http://eu.ironman.com/triathlon/events/emea/ironman/cork.aspx#axzz5SvojhsH4"></a>
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Next one happening on Jun 23rd 2019</small>
+          </div>
+        </div>
+      </div><!-- .card-deck -->
+
+      <p>
+        If you know one that's not on the list, please feel free to send me the details.
+      </p>
+
       <form id="survey-form" action="">
 
         <div>
-          <label id="dropdown-label" for="dropdown">What type of course are you looking for ?</label>
-          <select id="dropdown" class="course" name="course">
-            <option value="0">Flat</option>
-            <option value="1">Hilly</option>
-            <option value="2">Scenic</option>
-            <option value="3">Cityscape</option>
-            <option value="4">Historic</option>
-            <option value="5">Exotic</option>
-          </select>
-        </div>
-
-        <fieldset>
-          <legend>What part of Europe would you like to explore ?</legend>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="north" />
-            <label for="">North</label>
-          </div>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="east" />
-            <label for="">East</label>
-          </div>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="central" />
-            <label for="">Central</label>
-          </div>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="south" />
-            <label for="">South</label>
-          </div>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="west" />
-            <label for="">West</label>
-          </div>
-
-        </fieldset>
-
-        <div>
-          <label id="name-label" for="name">Name</label>
+          <label id="name-label" for="name">Your Name</label>
           <input type="text" placeholder="John Doe" id="name" name="name" required>
         </div>
 
@@ -101,28 +100,50 @@
           <input type="number" min="0" max="10" placeholder="+415 635 8999" id="number" name="number" value="0" required>
         </div>
 
+        <div>
+          <label id="dropdown-label" for="dropdown">What type of course; is it flat, hilly, scenic, cityscape, historic, exotic ?</label>
+          <select id="dropdown" class="course" name="course">
+            <option value="0">Flat</option>
+            <option value="1">Hilly</option>
+            <option value="2">Scenic</option>
+            <option value="3">Cityscape</option>
+            <option value="4">Historic</option>
+            <option value="5">Exotic</option>
+          </select>
+        </div>
+
         <fieldset>
-          <legend>legend</legend>
+          <legend>If you have done it, how did you enjoy it? Otherwise, leave blank</legend>
 
           <div>
-            <input type="radio" id="huey" name="drone" value="huey" checked />
-            <label for="huey">Huey</label>
+            <input type="radio" id="" name="1radio" value="great" />
+            <label for="">Great</label>
           </div>
 
           <div>
-            <input type="radio" id="dewey" name="drone" value="dewey" />
-            <label for="dewey">Dewey</label>
+            <input type="radio" id="" name="1radio" value="good" />
+            <label for="">Good</label>
           </div>
 
           <div>
-            <input type="radio" id="louie" name="drone" value="louie" />
-            <label for="louie">Louie</label>
+            <input type="radio" id="" name="1radio" value="average" />
+            <label for="">Average</label>
+          </div>
+
+          <div>
+            <input type="radio" id="" name="1radio" value="bad" />
+            <label for="">bad</label>
+          </div>
+
+          <div>
+            <input type="radio" id="" name="1radio" value="worse" />
+            <label for="">worse</label>
           </div>
 
         </fieldset>
 
         <fieldset>
-          <legend>Select a maintenance drone</legend>
+          <legend>Select a checkbox</legend>
 
           <div>
             <input type="checkbox" id="" name="" value="0" checked />
@@ -142,11 +163,11 @@
         </fieldset>
 
         <div>
-          <label for="advanced">Advanced example:</label>
-          <textarea id="advanced" name="advanced" rows="3" cols="33" maxlength="200"></textarea>
+          <label for="advanced">Add a comment:</label>
+          <textarea id="advanced" name="advanced" rows="3" cols="10" maxlength="200"></textarea>
         </div>
 
-        <input type="submit" placeholder="" id="submit" name="submit" value="submit" />
+        <input type="submit" id="submit" name="submit" value="submit" />
 
       </form>
 
@@ -155,7 +176,12 @@
 
   <footer class="footer">
     <div class="container">
-      footer
+      <span>Sources:</span>
+      <ul>
+        <li><a href="http://eu.ironman.com/#axzz5SvojhsH4" target="_blank">Europe Ironman website</a>
+        <li><a href="https://en.wikipedia.org/wiki/Ironman_Triathlon" target="_blank">Ironman on wikipedia</a>
+        </li>
+      </ul>
     </div>
   </footer>
 
@@ -166,8 +192,6 @@
   <!-- freecodecamp testable projects -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
   </script>
-
-
 
 </body>
 
