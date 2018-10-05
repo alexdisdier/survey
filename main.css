@@ -16,18 +16,78 @@ body {
 }
 
 .container {
-  max-width: 740px;
+  max-width: 1024px;
 }
 
 header {
   margin-top: 32px;
   margin-top: 3em;
-  padding-bottom: 16px;
-  padding-bottom: 1em;
 }
 
-#description a {
-  display: block;
+header h1,
+header h2 {
+  margin-bottom: 32px;
+}
+
+header h2 {
+  margin-top: 40px;
+  margin-top: 2.5em;
+  font-size: 24px;
+  font-size: 1.5em;
+}
+
+#letter-m-red {
+  color: red;
+}
+
+#description a,
+footer a {
+  display: inline-block;
+  color: red;
+  transition: .5s;
+}
+
+#description a:hover,
+footer a:hover {
+  text-decoration: none !important;
+  opacity: 0.5;
+}
+
+.card-deck {
+  margin-bottom: 32px;
+}
+
+.card {
+  box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, 0.15);
+  transition: .6s;
+  color: #222;
+  opacity: 0.9;
+}
+
+.card:hover {
+  box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: #222;
+  opacity: 1;
+}
+
+.card-footer {
+  border-top: 1px solid red;
+}
+
+form {
+  padding: 16px;
+  border: 1px solid #222;
+}
+
+.form-check-inline {
+  align-items: baseline;
+}
+
+legend {
+  font-size: 16px;
+  font-size: 1em;
 }
 
 /* footer */
@@ -42,11 +102,13 @@ header {
 }
 
 .footer .container {
+  margin-top: 32px;
+  margin-top: 2em;
   padding-top: 16px;
   padding-top: 1em;
   padding-bottom: 16px;
   padding-bottom: 1em;
-  border-top: 1px solid #222;
+  border-top: 1px solid red;
   opacity: 0.9;
 }
 
@@ -57,6 +119,42 @@ footer ul {
 
 footer li:before {
   content: '- ';
+}
+
+/* Arrow back-to-top */
+#back-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 42px;
+  text-align: center;
+  line-height: 40px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+#back-to-top:hover {
+  background: #e9ebec;
+  color: red;
+  font-weight: bold;
+  transition: 0.3s;
+  transform: translateY(-3px);
+}
+
+#back-to-top.show {
+  opacity: 0.7;
+}
+
+.hide {
+  display: none;
 }
 
 /* @media queries */

@@ -11,7 +11,7 @@
   <title>European Ironman</title>
 
   <!-- Normalize.CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" type="text/css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" type="text/css"> -->
 
   <!-- Bootstrap 4 framework -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -29,13 +29,14 @@
   <header>
     <div class="container">
       <h1 id="title">
-        Ironman
+        Iron<span id="letter-m-red">m</span>an
       </h1>
       <p id="description">
         An Ironman Triathlon is one of a series of long-distance triathlon races organized by the World Triathlon Corporation (WTC), consisting of a 2.4-mile (3.86 km) swim, a 112-mile (180.25 km) bicycle ride and a marathon 26.22-mile (42.20 km)
-        run, raced in that order and without a break. It is widely considered one of the most difficult one-day sporting events in the world <a href="https://en.wikipedia.org/wiki/Ironman_Triathlon" target="_blank">Learn more about Iron man.</a> <br />Are
-        you planning an Ironman in Europe, Here are some of them.
+        run, raced in that order and without a break. It is widely considered one of the most difficult one-day sporting events in the world <a href="https://en.wikipedia.org/wiki/Ironman_Triathlon" target="_blank">Learn more about Iron man.</a> <br />
       </p>
+      <h2>Are
+        you planning an Ironman in Europe...</h2>
     </div>
   </header>
 
@@ -43,66 +44,64 @@
     <div class="container">
 
       <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+
+        <a href="http://eu.ironman.com/triathlon/events/emea/ironman/barcelona.aspx#axzz5SvojhsH4" target="_blank" class="card">
+          <img class="card-img-top" src="assets/img/barcelona-spain.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Barcelona, SPAIN</h5>
-            <p class="card-text">IRONMAN Barcelona showcases a historic and culturally rich region of Spain. <a href="http://eu.ironman.com/triathlon/events/emea/ironman/barcelona.aspx#axzz5SvojhsH4">Read more</a>
+            <p class="card-text">IRONMAN Barcelona showcases a historic and culturally rich region of Spain.
             </p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Next one happening on Oct 7th 2018</small>
           </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+        </a><!-- .card -->
+
+        <a href="http://eu.ironman.com/triathlon/events/emea/ironman/lanzarote.aspx#axzz5SvojhsH4" target="_blank" class="card">
+          <img class="card-img-top" src="assets/img/lanzarote-spain.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Lanzarote, canary islands, SPAIN</h5>
-            <p class="card-text">IRONMAN Lanzarote is one of the longest-standing races in Europe. A Unesco biosphere reserve, Lanzarote is a captivating island with 300 volcanic cones.<a href="http://eu.ironman.com/triathlon/events/emea/ironman/lanzarote.aspx#axzz5SvojhsH4">Read
-                more</a>
+            <p class="card-text">IRONMAN Lanzarote is one of the longest-standing races in Europe. A Unesco biosphere reserve, Lanzarote is a captivating island with 300 volcanic cones.
             </p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Next one happening on May 25th 2019</small>
           </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+        </a><!-- .card -->
+
+        <a href="http://eu.ironman.com/triathlon/events/emea/ironman/cork.aspx#axzz5SvojhsH4" target="_blank" class="card">
+          <img class="card-img-top" src="assets/img/cork-ireland.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Cork, Ireland</h5>
-            <p class="card-text">IRONMAN Ireland, Cork, will showcase the beauty and rugged landscapes of County Cork - one of Ireland's most popular tourist destinations.<a href="http://eu.ironman.com/triathlon/events/emea/ironman/cork.aspx#axzz5SvojhsH4"></a>
+            <p class="card-text">IRONMAN Ireland, Cork, will showcase the beauty and rugged landscapes of County Cork - one of Ireland's most popular tourist destinations.
             </p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Next one happening on Jun 23rd 2019</small>
           </div>
-        </div>
+        </a><!-- .card -->
+
       </div><!-- .card-deck -->
 
       <p>
-        If you know one that's not on the list, please feel free to send me the details.
+        N.B If you know one that's not on the list, please fill in the form to submit the ironman details.
       </p>
 
       <form id="survey-form" action="">
 
-        <div>
-          <label id="name-label" for="name">Your Name</label>
-          <input type="text" placeholder="John Doe" id="name" name="name" required>
+        <div class="form-group">
+          <label for="city">In which city</label>
+          <input type="text" class="form-control" id="city" placeholder="Rome" name="city" required>
         </div>
 
-        <div>
-          <label id="email-label" for="email">Email</label>
-          <input type="email" placeholder="johndoe@freecodecamp.com" id="email" name="email" required>
+        <div class="form-group">
+          <label for="country">In which country</label>
+          <input type="text" class="form-control" id="country" placeholder="Italy" name="country" required>
         </div>
 
-        <div>
-          <label id="number-label" for="number">Phone number</label>
-          <input type="number" min="0" max="10" placeholder="+415 635 8999" id="number" name="number" value="0" required>
-        </div>
-
-        <div>
-          <label id="dropdown-label" for="dropdown">What type of course; is it flat, hilly, scenic, cityscape, historic, exotic ?</label>
-          <select id="dropdown" class="course" name="course">
+        <div class="form-group">
+          <label id="dropdown-label" for="dropdown">Type of course: is it flat, hilly, scenic, cityscape, historic, exotic ?</label>
+          <select class="form-control" id="dropdown" name="course">
             <option value="0">Flat</option>
             <option value="1">Hilly</option>
             <option value="2">Scenic</option>
@@ -112,62 +111,93 @@
           </select>
         </div>
 
-        <fieldset>
-          <legend>If you have done it, how did you enjoy it? Otherwise, leave blank</legend>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="great" />
-            <label for="">Great</label>
-          </div>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="good" />
-            <label for="">Good</label>
-          </div>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="average" />
-            <label for="">Average</label>
-          </div>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="bad" />
-            <label for="">bad</label>
-          </div>
-
-          <div>
-            <input type="radio" id="" name="1radio" value="worse" />
-            <label for="">worse</label>
-          </div>
-
-        </fieldset>
-
-        <fieldset>
-          <legend>Select a checkbox</legend>
-
-          <div>
-            <input type="checkbox" id="" name="" value="0" checked />
-            <label for="">checkbox 1</label>
-          </div>
-
-          <div>
-            <input type="checkbox" id="" name="" value="1" />
-            <label for="">checkbox 2</label>
-          </div>
-
-          <div>
-            <input type="checkbox" id="" name="" value="2" />
-            <label for="">checkbox 3</label>
-          </div>
-
-        </fieldset>
-
-        <div>
-          <label for="advanced">Add a comment:</label>
-          <textarea id="advanced" name="advanced" rows="3" cols="10" maxlength="200"></textarea>
+        <div class="form-group">
+          <label for="ironman-description">Quick description about this ironman</label>
+          <textarea class="form-control" id="ironman-description" rows="3"></textarea>
+          <small id="ironmanDescriptionHelp" class="form-text text-muted">No more than 150 characters.</small>
         </div>
 
-        <input type="submit" id="submit" name="submit" value="submit" />
+        <div class="form-group">
+          <label for="ironman-date">When is the next event</label>
+          <input type="date" class="form-control" id="ironman-date" name="event">
+        </div>
+
+        <label>Rate this ironman if you finished it.</label>
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="" name="radio" value="great" />
+            <label class="radio-inline" for="">Great</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="" name="radio" value="good" />
+            <label class="radio-inline" for="">Good</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="" name="radio" value="average" />
+            <label class="radio-inline" for="">Average</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="" name="radio" value="bad" />
+            <label class="radio-inline" for="">bad</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="" name="radio" value="worse" />
+            <label class="radio-inline" for="">worse</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="custom-file">
+            <input type="file" class="form-control custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Upload a photo for this event</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label id="name-label" for="name">Your name</label>
+          <input type="text" class="form-control" id="name" placeholder="John Doe" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="johndoe@freecodecamp.com" name="email" required>
+          <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group hide">
+          <label id="number-label" for="number">Number</label>
+          <input type="number" class="form-control" id="number" min="0" max="10" placeholder="" name="number" value="0" required>
+        </div>
+
+        <fieldset class="hide">
+          <legend>Select a checkbox</legend>
+
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="" name="" value="0" checked />
+            <label class="form-check-label" for="">checkbox 1</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="" name="" value="1" />
+            <label class="form-check-label" for="">checkbox 2</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" id="" name="" value="2" />
+            <label class="form-check-label" for="">checkbox 3</label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Add a comment</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <input type="submit" class="btn btn-danger" id="submit" name="submit" value="submit" />
 
       </form>
 
@@ -185,13 +215,20 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- button to bring back to the top -->
+  <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 
   <!-- freecodecamp testable projects -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
   </script>
+
+  <!-- UX design advice: https://uxdesign.cc/design-better-forms-96fadca0f49c -->
 
 </body>
 
