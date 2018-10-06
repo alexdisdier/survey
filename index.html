@@ -87,16 +87,28 @@
         N.B If you know one that's not on the list, please fill in the form to submit the ironman details.
       </p>
 
-      <form id="survey-form" action="">
+      <form id="survey-form" class="needs-validation" action="" enctype="multipart/form-data" novalidate>
 
         <div class="form-group">
           <label for="city">In which city</label>
           <input type="text" class="form-control" id="city" placeholder="Rome" name="city" required>
+          <!-- <div class="valid-feedback">
+            Looks good!
+          </div> -->
+          <div class="invalid-feedback">
+            Please choose a city.
+          </div>
         </div>
 
         <div class="form-group">
           <label for="country">In which country</label>
           <input type="text" class="form-control" id="country" placeholder="Italy" name="country" required>
+          <!-- <div class="valid-feedback">
+            Looks good!
+          </div> -->
+          <div class="invalid-feedback">
+            Please choose a country.
+          </div>
         </div>
 
         <div class="form-group">
@@ -109,6 +121,12 @@
             <option value="4">Historic</option>
             <option value="5">Exotic</option>
           </select>
+          <!-- <div class="valid-feedback">
+            Looks good!
+          </div> -->
+          <div class="invalid-feedback">
+            Please choose a type of course.
+          </div>
         </div>
 
         <div class="form-group">
@@ -120,6 +138,12 @@
         <div class="form-group">
           <label for="ironman-date">When is the next event</label>
           <input type="date" class="form-control" id="ironman-date" name="event">
+          <!-- <div class="valid-feedback">
+            Looks good!
+          </div> -->
+          <div class="invalid-feedback">
+            Pick a date.
+          </div>
         </div>
 
         <label>Rate this ironman if you finished it.</label>
@@ -152,8 +176,8 @@
 
         <div class="form-group">
           <div class="custom-file">
-            <input type="file" class="form-control custom-file-input" id="customFile">
-            <label class="custom-file-label" for="customFile">Upload a photo for this event</label>
+            <input type="file" class="form-control custom-file-input" id="customFile" accept="image/png, image/jpeg" />
+            <label id="upload-img" class="custom-file-label" for="customFile">Upload photo of the event</label>
           </div>
         </div>
 
@@ -228,7 +252,13 @@
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
   </script>
 
-  <!-- UX design advice: https://uxdesign.cc/design-better-forms-96fadca0f49c -->
+  <!-- UX design advice: https://uxdesign.cc/design-better-forms-96fadca0f49c
+  https://uxplanet.org/the-18-must-do-principles-in-the-form-design-fe89d0127c92
+Form inspiration:
+https://medium.com/swlh/creative-form-input-field-design-examples-bfe5dd50808a
+https://colorlib.com/wp/free-html5-contact-form-templates/
+box-shadows: https://codepen.io/sdthornton/pen/wBZdXq
+bootstrap4: https://getbootstrap.com/docs/4.0/components/forms/#validation -->
 
 </body>
 
