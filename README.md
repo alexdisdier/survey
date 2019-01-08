@@ -28,7 +28,7 @@ product_landing_page
 
 * html
 * css
-* (Bootstrap 4)[https://getbootstrap.com/docs/4.0/getting-started/introduction/]
+* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 ## Authors
 
