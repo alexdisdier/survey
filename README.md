@@ -1,6 +1,6 @@
 # Synopsis
 
-This is a responsive survey form on the European Iron man topic. (For practice and not geared towards commercial use).
+This is a responsive survey form on the European Ironman topic. (For practice and not geared towards commercial use).
 
 ![screenshot of the survey form](screenshot.jpg?raw=true "screenshot of a responsive survey form")
 
